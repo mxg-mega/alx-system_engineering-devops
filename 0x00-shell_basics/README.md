@@ -3,4 +3,5 @@ first was vurrent working directory
 second was listing files
 third is printing home directory
 fourth is the long format listing
-fifth is displaying hidden files
+fifth is displaying hidden file
+sixth list with dates
