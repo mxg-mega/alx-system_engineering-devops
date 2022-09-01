@@ -5,3 +5,5 @@ third is printing home directory
 fourth is the long format listing
 fifth is displaying hidden file
 sixth list with dates
+7. move betty to another directory
+8. delete file betty 
