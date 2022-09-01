@@ -1,1 +1,4 @@
-the files in this directory are file written to be executable in order to navigate through the shell
+the files in this directory are file written to be executable in order to navigate through the shel
+first was vurrent working directory
+second was listing files
+third is printing home directory
