@@ -5,8 +5,9 @@ while ((n<=10))
 do
 	if [ $n -eq 9 ]
 	then
-		echo "Hi\nBest School"
+		echo -e "Best School\nHi"
+	else
+		echo "Best School"
 	fi
-	echo "Best School"
 	((n++))
 done
