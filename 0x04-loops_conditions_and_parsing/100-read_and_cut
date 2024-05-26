@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Read the /etc/passwd file line by line
+while IFS= read -r line
+do
+	# Extract the necessary fields using cut
+	username=$(echo "$line" | cut -d ':' -f 1)
+	userid=$(echo "$line" | cut -d ':' -f 3)
+	homedir=$(echo "$line" | cut -d ':' -f 6)
+
+	# Print the extracted fields
+	echo "$username:$userid:$homedir"
+done < /etc/passwd
