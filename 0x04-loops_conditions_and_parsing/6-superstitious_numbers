@@ -5,11 +5,11 @@ while ((num<=20))
 do
 	case $num in
 		4)
-			echo "bad luck from China";;
+			echo "$num\nbad luck from China";;
 		9)
-			echo "bad luck from Japan";;
+			echo "$num\nbad luck from Japan";;
 		17)
-			echo "bad luck from Italy";;
+			echo "$num\nbad luck from Italy";;
 		*)
 			echo "$num";;
 	esac
