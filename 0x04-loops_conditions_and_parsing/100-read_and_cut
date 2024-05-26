@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-
 # Read the /etc/passwd file line by line
 cut -d ':' -f 1,3,6 /etc/passwd
