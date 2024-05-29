@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# script creates a file and set its actions
+# and traps signals for which depending on signal a certain action is triggered
+# Create the PID file
+echo $$ > /var/run/myscript.pid
+
+while true;
+do
+	echo "To infinity and beyond"
+	# Trap signals to handle them appropriately
+	trap 'echo "I hate the kill command"; exit' SIGTERM
+	trap 'echo "Y U no love me?!"; exit' SIGINT
+	trap 'rm /var/run/myscript.pid; exit' SIGQUIT SIGTERM
+	sleep 1
+done
+
