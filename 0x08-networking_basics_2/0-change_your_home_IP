@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This Script changes the configuration of a server, by changing IPs
+cp /etc/hosts /etc/hosts.old
+echo "127.0.0.2 localhost" >> /etc/hosts
+echo "8.8.8.8 facebook.com" >> /etc/hosts
